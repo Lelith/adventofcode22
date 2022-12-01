@@ -14,7 +14,7 @@ try {
   })
 
   foodSupply.sort((a,b) => b-a);
-  const topThreeSum = foodSupply[0]+foodSupply[1]+foodSupply[2]
+  const topThreeSum = utils.calcArraySum(foodSupply.slice(0,3));
 
   console.log('Maximum Calories',topThreeSum);
 
