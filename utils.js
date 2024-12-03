@@ -1,6 +1,7 @@
 const fs = require("fs");
 
 module.exports = {
+  getUnique: data => new Set(data),
   trimData: data => data.map(item => item.trim()),
   calcArraySum: array => array.reduce((a, b) => a + b),
   maxArrayNum: array => array.reduce((a, b) => Math.max(a, b), -Infinity),
